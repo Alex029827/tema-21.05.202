@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="logo-container">
+        <img src="./assets/logo.svg" alt="" />
+      </div>
+      <form class="calculator-form">
+        <div class="input-calculator-form">
+          <div>
+            <div class="label-container">
+              <label class="standard-label" for="bill">Bill</label>
+              <p class="standard-input-error hide bill-input-error">
+                Must be greater than 0
+              </p>
+            </div>
+            <div class="input-container">
+              <input
+                class="standard-input with-left-side-icon"
+                type="number"
+                name="bill"
+                id="bill"
+              />
+              <img class="left-side-icon" src="./assets/icon-dollar.svg" />
+            </div>
+          </div>
+          <div class="tips-container">
+            <label class="standard-label">Select Tip %</label>
+            <div class="tip-buttons-container">
+              <button class="tip-button" type="button">5%</button>
+              <button class="tip-button" type="button">10%</button>
+              <button class="tip-button" type="button">15%</button>
+              <button class="tip-button" type="button">25%</button>
+              <button class="tip-button" type="button">50%</button>
+              <input
+                class="standard-input"
+                type="number"
+                name="custom-tip"
+                id="custom-tip"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="label-container">
+              <label class="standard-label" for="number-of-people"
+                >Number of People</label
+              >
+              <p class="standard-input-error hide people-input-error">
+                Must be greater than 0
+              </p>
+            </div>
+
+            <div class="input-container">
+              <input
+                class="standard-input with-left-side-icon"
+                type="number"
+                name="number-of-people"
+                id="number-of-people"
+              />
+              <img class="left-side-icon" src="./assets/icon-person.svg" />
+            </div>
+          </div>
+          <button type="submit">CALCULATE</button>
+        </div>
+        <div class="output-calculator-form">
+          <div class="output-card">
+            <div class="total-amount-description">
+              <p class="heading-of-total">
+                Tip Amount <br /><span>/ person</span>
+              </p>
+              <p class="tip-amount-person">$0.00</p>
+            </div>
+            <div class="total-amount-description">
+              <p class="heading-of-total">Total <br /><span>/ person</span></p>
+              <p class="total-amount-person">$0.00</p>
+            </div>
+          </div>
+          <button class="reset-button">RESET</button>
+        </div>
+      </form>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
