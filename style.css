@@ -88,6 +88,10 @@ body {
   padding-left: 48px;
 }
 
+.on-error-border-input {
+  border: 2px solid var(--orange-400);
+}
+
 .standard-input-error {
   color: var(--orange-400);
   font-size: 16px;
@@ -168,7 +172,7 @@ button {
   background-color: var(--green-900);
   padding: 20px;
   border: none;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
 }
 .tip-buttons-container {
@@ -179,9 +183,23 @@ button {
   margin-bottom: 24px;
 }
 
+.calculate-button {
+  transition: all 0.3s ease;
+  background-color: var(--green-400);
+  color: var(--green-900);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.calculate-button:hover {
+  background-color: #9fe8df;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* --- Calculator Form --- */
 .selected-tip {
-  background-color: var(--green-400);
+  background-color: #9fe8df;
   color: var(--green-900);
 }
 
@@ -220,12 +238,17 @@ button {
 .reset-button {
   background-color: var(--green-400);
   color: var(--green-900);
+  transition: all 0.3s ease;
   font-size: 24px;
   font-weight: 700;
   line-height: 72px;
   border-radius: 12px;
   border: none;
   margin-top: 28px;
+}
+.reset-button:hover {
+  background-color: #9fe8df;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 span {
@@ -248,6 +271,7 @@ span {
     gap: 24px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 32px;
   }
   .output-calculator-form {
     min-width: 50%;

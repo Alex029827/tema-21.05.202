@@ -37,7 +37,13 @@
             </div>
           </div>
           <div class="tips-container">
-            <label class="standard-label">Select Tip %</label>
+            <div class="label-container">
+              <label class="standard-label">Select Tip %</label>
+              <p class="standard-input-error hide custom-tip-input-error">
+                Must be equal or greater than 0
+              </p>
+            </div>
+
             <div class="tip-buttons-container">
               <button class="tip-button" type="button">5%</button>
               <button class="tip-button" type="button">10%</button>
@@ -72,7 +78,7 @@
               <img class="left-side-icon" src="./assets/icon-person.svg" />
             </div>
           </div>
-          <button type="submit">CALCULATE</button>
+          <button type="submit" class="calculate-button">CALCULATE</button>
         </div>
         <div class="output-calculator-form">
           <div class="output-card">
@@ -87,7 +93,7 @@
               <p class="total-amount-person">$0.00</p>
             </div>
           </div>
-          <button class="reset-button">RESET</button>
+          <button class="reset-button" type="button">RESET</button>
         </div>
       </form>
     </section>
